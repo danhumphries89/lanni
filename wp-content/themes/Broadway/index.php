@@ -6,7 +6,7 @@
 
 	</div>
 	<div id="left_sidebar">
-		<?php get_sidebar(); ?>
+		
 	</div>
 
 </div>
