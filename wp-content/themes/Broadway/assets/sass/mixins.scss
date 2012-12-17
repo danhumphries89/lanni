@@ -1,0 +1,8 @@
+@import "variables";
+
+/** Colour & Size of boxes and borders **/
+@mixin box-style{
+
+	border: $thickBorder;
+	background: #FFF;
+}

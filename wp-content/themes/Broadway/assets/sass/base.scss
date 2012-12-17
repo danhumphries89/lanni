@@ -1,6 +1,59 @@
 @import 'variables';
 @import 'mixins';
 
+@fontface{
+	src: url('../fonts/Aller_Rg.ttf');
+	font-weight: 400;
+	font-family: Aller, sans-serif;
+}
+
 body{
 	background: $off-white;
+	font-family: Aller;
+}
+
+.product-details{
+    
+    width: 300px;
+    top: 80px;
+    left: 75px;
+    padding: 15px;
+    background: #FFF;
+    position: relative;
+
+    @include box-style;
+
+    h1, h2, h3, h4, h5{
+        margin: 0 10px;
+        padding: 0;
+        text-align: center;
+        color: $dark-green;
+        font-weight: 200;
+    }
+
+    .product-title{
+        padding: 0 0 5px;
+        font-size: 1.4em;
+        border-bottom: 1px solid #EEE;
+    }
+
+    .price-block{
+        margin: 5px 0 0;
+        padding: 0 0;
+        text-align: center;
+
+        span{
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+
+    p{
+        margin: 0;
+        padding: 10px 0;
+        font-size: 0.8em;
+        color: #888;
+        font-family: Arial, sans-serif;
+    }
 }

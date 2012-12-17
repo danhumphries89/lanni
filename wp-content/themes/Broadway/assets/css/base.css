@@ -1,2 +1,47 @@
+/** Colours used throughout the site **/
+/** Border Thickness & Styles **/
+/** Colours used throughout the site **/
+/** Border Thickness & Styles **/
+/** Colour & Size of boxes and borders **/
+@fontface {
+  src: url("../fonts/Aller_Rg.ttf");
+  font-weight: 400;
+  font-family: Aller, sans-serif; }
+
 body {
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  font-family: Aller; }
+
+.product-details {
+  width: 300px;
+  top: 80px;
+  left: 75px;
+  padding: 15px;
+  background: #FFF;
+  position: relative;
+  border: 8px solid #d8f1ef;
+  background: #FFF; }
+  .product-details h1, .product-details h2, .product-details h3, .product-details h4, .product-details h5 {
+    margin: 0 10px;
+    padding: 0;
+    text-align: center;
+    color: #83cbc3;
+    font-weight: 200; }
+  .product-details .product-title {
+    padding: 0 0 5px;
+    font-size: 1.4em;
+    border-bottom: 1px solid #EEE; }
+  .product-details .price-block {
+    margin: 5px 0 0;
+    padding: 0 0;
+    text-align: center; }
+    .product-details .price-block span {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333; }
+  .product-details p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 0.8em;
+    color: #888;
+    font-family: Arial, sans-serif; }
