@@ -32,11 +32,7 @@
 				</article>
 
 				<section class="product-options">
-					<div class="giftRecipient-details"> 
-						<h4>Gift Recipient</h4> </dt>
-						<?php echo do_shortcode( "[giftRecipient]" ); ?>
-					</div>
-
+					<?php if(!empty($options_meta)) : ?>
 					<div class="customizeable-options"> 
 						<h4>Customizable Options</h4>
 						<?php 
@@ -55,10 +51,20 @@
 							endforeach;
 						?>
 					</div>
+					<?php endif; ?>
+
+					<div class="giftRecipient-details"> 
+						<h4>Gift Recipient</h4> </dt>
+						<?php echo do_shortcode( "[giftRecipient]" ); ?>
+					</div>
 				</section>
 
 				<footer class="product-footer">
-
+					<div class="addBasket">
+						<a href="javascript:void(0)" class="add" title="Add to Basket">
+							<span>Add to Basket</span>
+						</a>
+					</div>
 				</footer>
 			</div>
 		</li>

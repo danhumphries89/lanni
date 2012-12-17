@@ -8,8 +8,10 @@
 }
 
 body{
-	background: $off-white;
+	background: $off-white
+	;
 	font-family: Aller;
+	overflow: hidden;
 }
 
 /** Sliding Styles for Products pages **/
@@ -26,8 +28,8 @@ body{
 .product-details{
     
     width: 300px;
-    height: 600px;
-    top: 70px;
+    height: 625px;
+    top: 35px;
     left: 75px;
     padding: 15px 0;
     background: #FFF;
@@ -69,7 +71,7 @@ body{
             font-size: 2em;
             font-weight: bold;
             color: $dark-green;
-            text-shadow: 0 1px 2px #FFF;
+            text-shadow: $text-shadow-green;
         }
     }
 
@@ -90,17 +92,13 @@ body{
 
 	        margin: 0;
 	        padding: 0 0;
+	        clear: both;
 
 		    h4{
 		        margin: 0 0;
 		        padding: 10px 15px;
 		        color: $dark-green;
 		        border-bottom: 1px dotted #EEE; 
-
-		        &:hover{
-		        	text-decoration: underline;
-		        	cursor: pointer;
-		        }
 		    }
 
 			label{
@@ -112,8 +110,8 @@ body{
 
 		    .cd_textbox, .cd_textarea,
 		    .gift_textbox, .gift_textarea{
-		    	margin: 0 15px;
 
+		    	margin: 0 15px;
 		        @include input-base;
 
 		        &:hover, &:focus{
@@ -122,6 +120,48 @@ body{
 		            border: $thinInputBorder-hover;
 		        }
 		    }
+
+		    .row{ margin: 5px 0; }
+
+		    .left{
+		    	width: 100px;
+		    	margin: 5px 5px 0 15px;
+		    	padding: 0;
+		    	line-height: 22px;
+		    	clear: both;
+		        float: left;
+
+		        &:after{ content: ": "; }
+		    }
+		    .left + select{ 
+		    	margin: 5px 0 0; 
+		    	outline: none;
+		    }
 	    }
+	}
+
+	.product-footer{
+
+		.addBasket{
+			width: 100%;
+			margin: 10px 0 0;
+			padding: 10px 0 0;
+			bottom: 0px;
+			position: absolute;
+			background: $light-green;
+			text-align: right;
+
+			a{
+				text-decoration: none;
+				&:hover{ }
+
+				span{
+					margin: 0 5px 0 0;
+					color: #333;
+					font-weight: 200;
+					text-shadow: $text-shadow-green;
+				}
+			}
+		}
 	}
 }
