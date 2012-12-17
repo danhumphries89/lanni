@@ -38,26 +38,45 @@ function add_product_taxonomies() {
 }
 
 /** Add Shortcodes to Post Pages for Options **/
+function customerDetailsShortcode( $atts ){
+
+	$output = "<div class='customerDetails'>"
+			. "<h4>Customer Details</h4>"
+			. "<input type='text' placeholder='Fullname' name='customer_name' id='customer_name' class='cd_textbox' />"
+			. "<textarea text' palceholder='Address' name='customer_address' id='customer_address' class='cd_textarea'></textarea>"
+			. "<input type='email' placeholder='Email Address' name='customer_email' id='customer_email' class='cd_textbox' />"
+			. "<input type='text' placeholder='Telephone' name='customer_telephone' id='customer_telephone' class='cd_textbox' />"
+			. "</div>";
+	return $output;
+}
+add_shortcode( 'customerDetails', 'customerDetailsShortcode' );
+
 function colourShortcode( $atts ){
 
-	$output = "<div class='row options'>"
-			 ."<select name='colour' id='colourOption'>"
-				 ."<option value='Red'>Red</option>"
-				 ."<option value='Pink'>Pink</option>"
-				 ."<option value='Orange'>Orange</option>"
-				 ."<option value='Silver'>Silver</option>"
-				 ."<option value='Gold'>Gold</option>"
-				 ."<option value='Dark Blue'>Dark Blue</option>"
-				 ."<option value='Light Blue'>Light Blue</option>"
-				 ."<option value='Red'>Red</option>"
-				 ."<option value='Dark Mauve'>Dark Mauve</option>"
-				 ."<option value='Dark Green'>Dark Green</option>"
-				 ."<option value='Turquoise'>Turquoise</option>"
-				 ."<option value='Green'>Green</option>"
-				 ."<option value='Black'>Black</option>"
-			 ."</select>"
-			 ."</div>";
-
+	//check to see which drop down list needs to be included
+	switch($atts['type']){
+		case "glass":
+			$output = "<div class='row options'>"
+					 ."<select name='colour' id='colourOption'>"
+					 	 ."<option value=''>Select Colour</option>"
+					 	 ."<option value='Multi-Coloured'>Multi-Coloured</option>"
+						 ."<option value='Red'>Red</option>"
+						 ."<option value='Pink'>Pink</option>"
+						 ."<option value='Orange'>Orange</option>"
+						 ."<option value='Silver'>Silver</option>"
+						 ."<option value='Gold'>Gold</option>"
+						 ."<option value='Dark Blue'>Dark Blue</option>"
+						 ."<option value='Light Blue'>Light Blue</option>"
+						 ."<option value='Red'>Red</option>"
+						 ."<option value='Dark Mauve'>Dark Mauve</option>"
+						 ."<option value='Dark Green'>Dark Green</option>"
+						 ."<option value='Turquoise'>Turquoise</option>"
+						 ."<option value='Green'>Green</option>"
+						 ."<option value='Black'>Black</option>"
+					 ."</select>"
+					 ."</div>";
+			break;
+	}
 	return $output;
 }
 add_shortcode( 'colourOptions', 'colourShortcode' );
