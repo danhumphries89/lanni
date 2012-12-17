@@ -39,7 +39,6 @@ function add_product_taxonomies() {
 
 /** Add Shortcodes to Post Pages for Options **/
 function customerDetailsShortcode( $atts ){
-
 	$output = "<div class='customerDetails'>"
 			. "<h4>Customer Details</h4>"
 			. "<input type='text' placeholder='Fullname' name='customer_name' id='customer_name' class='cd_textbox' />"
@@ -50,6 +49,19 @@ function customerDetailsShortcode( $atts ){
 	return $output;
 }
 add_shortcode( 'customerDetails', 'customerDetailsShortcode' );
+
+function bangleSizeShortcode( $atts ){
+	$output = "<div class='row options'>"
+			. "<select name='bangle_size' id='bangle_size'>"
+				. "<option value='S'>Small</option>"
+				. "<option value='M'>Medium</option>"
+				. "<option value='L'>Large</option>"
+				. "<option value='XL'>Extra Large</option>"
+			. "</select>"
+			. "</div>";
+	return $output;
+}
+add_shortcode( 'bangleSize', 'bangleSizeShortcode' );
 
 function colourShortcode( $atts ){
 
