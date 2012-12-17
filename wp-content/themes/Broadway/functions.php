@@ -52,6 +52,7 @@ add_shortcode( 'customerDetails', 'customerDetailsShortcode' );
 
 function bangleSizeShortcode( $atts ){
 	$output = "<div class='row options'>"
+			. "<label for='bangle_size'>Bangle Size'</label>"
 			. "<select name='bangle_size' id='bangle_size'>"
 				. "<option value='S'>Small</option>"
 				. "<option value='M'>Medium</option>"
@@ -63,12 +64,34 @@ function bangleSizeShortcode( $atts ){
 }
 add_shortcode( 'bangleSize', 'bangleSizeShortcode' );
 
+function giftRecipientShortcode( $atts ){
+	$output = "<div class='row options'>"
+			. "<h4>Gift Recipient</h4>"
+			. "<label for='gift_name'>Name (if different to above)</label>"
+			. "<input type='text' name='gift_name' id='gift_name' class='gift_textbox' />"
+			. "<label for='gift_initals'>Initals to Engrave</label>"
+			. "<input type='text' name='gift_initals' id='gift_initals' class='gift_textbox' />"
+			. "<label for='gift_gender'>Gender</label>"
+			. "<select name='gift_gender' id='gift_gender'>"
+				."<option value='Male'>Male</option>"
+				."<option value='Female'>Female</option>"
+			. "</select>"
+			. "<label for='gift_time'>Time (24 hours)</label>"
+			. "<input type='text' name='gift_type' id='gift_type' class='gift_textbox' />"
+			. "<label for='gift_place'>Place of Birth</label>"
+			. "<input type='text' name='gift_place' id='gift_place' class='gift_textbox' />"
+			. "</div>";
+	return $output;
+}
+add_shortcode( 'giftRecipient', 'giftRecipientShortcode' );
+
 function colourShortcode( $atts ){
 
 	//check to see which drop down list needs to be included
 	switch($atts['type']){
 		case "glass":
 			$output = "<div class='row options'>"
+					 ."<label for='colour'>Glass Background Colour</label>"
 					 ."<select name='colour' id='colourOption'>"
 					 	 ."<option value=''>Select Colour</option>"
 					 	 ."<option value='Multi-Coloured'>Multi-Coloured</option>"
