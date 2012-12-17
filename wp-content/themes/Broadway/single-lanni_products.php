@@ -15,7 +15,10 @@
 		<div id="product<?php the_ID(); ?>" class="product-details">
 
 			<header class="product-header">
-				<h2 class="product-title"><?php the_title(); ?></h2>
+				<h2>
+					<span class="title"><?php the_title(); ?></span>
+					<span class="category"><?php echo $categories[0]->name; ?></span>
+				</h2>
 
 				<div class="price-block">
 					<span class="price">&pound;<?php echo $price; ?></span>

@@ -16,32 +16,43 @@ body {
   width: 300px;
   top: 80px;
   left: 75px;
-  padding: 15px;
+  padding: 15px 0;
   background: #FFF;
   position: relative;
   border: 8px solid #d8f1ef;
   background: #FFF; }
   .product-details h1, .product-details h2, .product-details h3, .product-details h4, .product-details h5 {
-    margin: 0 10px;
+    margin: 0;
     padding: 0;
-    text-align: center;
-    color: #83cbc3;
+    font-size: 1em;
     font-weight: 200; }
-  .product-details .product-title {
-    padding: 0 0 5px;
-    font-size: 1.4em;
-    border-bottom: 1px solid #EEE; }
+  .product-details h2 {
+    padding: 0 0 15px;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    border-bottom: 1px solid #d8f1ef; }
+    .product-details h2 span {
+      margin: 0;
+      display: block; }
+    .product-details h2 .title {
+      font-size: 1.8em; }
+    .product-details h2 .category {
+      color: #666; }
   .product-details .price-block {
-    margin: 5px 0 0;
-    padding: 0 0;
-    text-align: center; }
+    margin: 0 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #d8f1ef;
+    border-bottom: 1px solid #d8f1ef; }
     .product-details .price-block span {
       font-size: 2em;
       font-weight: bold;
-      color: #333; }
+      color: #83cbc3;
+      text-shadow: 0 1px 2px #FFF; }
   .product-details p {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 15px;
     font-size: 0.8em;
     color: #888;
     font-family: Arial, sans-serif; }
