@@ -2,6 +2,10 @@
 $off-white: #F1F1F1;
 $light-green: rgb(216, 241, 239);
 $dark-green: rgb(131, 203, 195);
+$inputBackground: #FAFFBD;
 
 /** Border Thickness & Styles **/
 $thickBorder: 8px solid $light-green;
+
+$thinInputBorder-normal: 1px solid #EEE;
+$thinInputBorder-hover: 1px solid $light-green;

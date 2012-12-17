@@ -2,7 +2,15 @@
 
 /** Colour & Size of boxes and borders **/
 @mixin box-style{
-
 	border: $thickBorder;
 	background: #FFF;
+}
+
+@mixin input-base{
+    width: 258px;
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #333;
+	border: $thinInputBorder-normal;
 }

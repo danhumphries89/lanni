@@ -29,23 +29,37 @@
 				<?php the_content(); ?>
 			</article>
 
-			<section class="product-options">
-				<?php 
-					//split the options by the comma
-					$optionsList = explode(",", $options_meta);
+			<section class="product-accordion">
+				<dl class="accordion">
+					<dt class="customer-details"> <h4>Customer Details</h4> </dt>
+					<dd class="details"><?php echo do_shortcode( "[customerDetails]" ); ?></dd>
 
-					//loop through the list and execute the shortcodes
-					foreach($optionsList as $options) : 
+					<dt class="giftRecipient-details"> <h4>Gift Recipient</h4> </dt>
+					<dd class="details" style="display: none;"><?php echo do_shortcode( "[giftRecipient]" ); ?></dd>
 
-						//explode to get the attributes
-						$option_explode = explode(":", $options);
+					<dt class="product-options"> <h4>Customizable Options</h4> </dt>
+					<dd class="details" style="display: none;">
+						<?php 
+							//split the options by the comma
+							$optionsList = explode(",", $options_meta);
 
-						//execute the shortcode
-						echo do_shortcode( "[" . trim($option_explode[0]) . " " . trim($option_explode[1])	 . "]" );
+							//loop through the list and execute the shortcodes
+							foreach($optionsList as $options) : 
 
-					endforeach;
-				?>
+								//explode to get the attributes
+								$option_explode = explode(":", $options);
+
+								//execute the shortcode
+								echo do_shortcode( "[" . trim($option_explode[0]) . " " . trim($option_explode[1])	 . "]" );
+
+							endforeach;
+						?>
+					</dd>
+				</dl>
 			</section>
+			<footer class="product-footer">
+
+			</footer>
 		</div>
 
 	<?php endwhile; ?>
