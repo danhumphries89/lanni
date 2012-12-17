@@ -34,7 +34,7 @@
 				<section class="product-options">
 					<?php if(!empty($options_meta)) : ?>
 					<div class="customizeable-options"> 
-						<h4>Customizable Options</h4>
+						<h4 class="options">Customizable Options</h4>
 						<?php 
 							//split the options by the comma
 							$optionsList = explode(",", $options_meta);
@@ -54,18 +54,10 @@
 					<?php endif; ?>
 
 					<div class="giftRecipient-details"> 
-						<h4>Gift Recipient</h4> </dt>
+						<h4 class="gift">Gift Recipient</h4> </dt>
 						<?php echo do_shortcode( "[giftRecipient]" ); ?>
 					</div>
 				</section>
-
-				<footer class="product-footer">
-					<div class="addBasket">
-						<a href="javascript:void(0)" class="add" title="Add to Basket">
-							<span>Add to Basket</span>
-						</a>
-					</div>
-				</footer>
 			</div>
 		</li>
 	<?php endwhile; ?>

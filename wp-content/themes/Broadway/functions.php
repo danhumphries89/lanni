@@ -3,6 +3,17 @@
 /** Add theme supports **/
 add_theme_support( 'post-thumbnails' );
 
+/** Add Menus that we wish to use **/
+function registerMenus() {
+  register_nav_menus(
+  	array( 
+  		'mainmenu' => __( 'Main Menu' ),
+    	'design-menu' => __( 'Design Menu' ) 
+    )
+  );
+}
+add_action( 'init', 'registerMenus' );
+
 /** Custom Type for Products **/
 add_action( 'init', 'create_product_posts' );
 function create_product_posts() {
@@ -52,8 +63,8 @@ function customerDetailsShortcode( $atts ){
 add_shortcode( 'customerDetails', 'customerDetailsShortcode' );
 
 function bangleSizeShortcode( $atts ){
-	$output = "<div class='row options'>"
-				. "<label for='bangle_size' class='left'>Bangle Size</label>"
+	$output = "<div class='row'>"
+				. "<label for='bangle_size' class='left'>Size</label>"
 				. "<select name='bangle_size' id='bangle_size'>"
 					. "<option value='S'>Small</option>"
 					. "<option value='M'>Medium</option>"
@@ -88,7 +99,7 @@ function colourShortcode( $atts ){
 	//check to see which drop down list needs to be included
 	switch($atts['type']){
 		case "glass":
-			$output = "<div class='row options'>"
+			$output = "<div class='row'>"
 						 ."<label for='colour' class='left'>Glass Colour</label>"
 						 ."<select name='colour' id='colourOption'>"
 						 	 ."<option value=''>Select Colour</option>"

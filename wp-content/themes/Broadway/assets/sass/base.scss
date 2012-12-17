@@ -28,8 +28,8 @@ body{
 .product-details{
     
     width: 300px;
-    height: 625px;
-    top: 35px;
+    height: 620px;
+    top: 40px;
     left: 75px;
     padding: 15px 0;
     background: #FFF;
@@ -49,7 +49,6 @@ body{
         text-align: center;
         color: #333;
         overflow: hidden;
-        border-bottom: 1px solid $light-green;
 
         span{ 
         	margin: 0;
@@ -64,14 +63,13 @@ body{
         margin: 0 0;
         padding: 10px 0;
         text-align: center;
-        background: $light-green;
-        border-bottom: 1px solid $light-green;
+        background: #FFF;
 
         span{
             font-size: 2em;
             font-weight: bold;
             color: $dark-green;
-            text-shadow: $text-shadow-green;
+            text-shadow: 0 1px 0 #EEE;
         }
     }
 
@@ -90,20 +88,31 @@ body{
 
 		.giftRecipient-details, .customizeable-options{
 
-	        margin: 0;
+	        margin: 0 0 20px;
 	        padding: 0 0;
 	        clear: both;
 
 		    h4{
-		        margin: 0 0;
-		        padding: 10px 15px;
+		        margin: 10px 0 10px;
+		        padding: 5px 15px 5px 40px;
 		        color: $dark-green;
 		        border-bottom: 1px dotted #EEE; 
 		    }
 
+	        .options{
+	        	margin-bottom: 5px;
+	        	background: url(../images/options.png) 12px 2px no-repeat;
+	        	background-size: 20px;
+	        }
+	        .gift{
+	        	background: url(../images/gift.png) 12px 0 no-repeat;
+	        	background-size: 20px;
+	        }
+
 			label{
-		        margin: 10px 15px 2px;
+		        margin: 0 15px 5px;
 		        color: #333;
+		        font-family: Arial, sans-serif;
 		        font-size: 0.8em;
 		        display: block;
 		    }
@@ -111,7 +120,7 @@ body{
 		    .cd_textbox, .cd_textarea,
 		    .gift_textbox, .gift_textarea{
 
-		    	margin: 0 15px;
+		    	margin: 0 15px 5px;
 		        @include input-base;
 
 		        &:hover, &:focus{
@@ -131,7 +140,7 @@ body{
 		    	clear: both;
 		        float: left;
 
-		        &:after{ content: ": "; }
+		        &:aftxer{ content: ": "; }
 		    }
 		    .left + select{ 
 		    	margin: 5px 0 0; 

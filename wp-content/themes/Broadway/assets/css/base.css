@@ -23,8 +23,8 @@ body {
 
 .product-details {
   width: 300px;
-  height: 625px;
-  top: 35px;
+  height: 620px;
+  top: 40px;
   left: 75px;
   padding: 15px 0;
   background: #FFF;
@@ -40,8 +40,7 @@ body {
     padding: 0 0 15px;
     text-align: center;
     color: #333;
-    overflow: hidden;
-    border-bottom: 1px solid #d8f1ef; }
+    overflow: hidden; }
     .product-details h2 span {
       margin: 0;
       display: block; }
@@ -53,13 +52,12 @@ body {
     margin: 0 0;
     padding: 10px 0;
     text-align: center;
-    background: #d8f1ef;
-    border-bottom: 1px solid #d8f1ef; }
+    background: #FFF; }
     .product-details .price-block span {
       font-size: 2em;
       font-weight: bold;
       color: #83cbc3;
-      text-shadow: 0 1px 1px white; }
+      text-shadow: 0 1px 0 #EEE; }
   .product-details .product-content p {
     margin: 0;
     padding: 10px 15px;
@@ -67,23 +65,31 @@ body {
     color: #333;
     font-family: Arial, sans-serif; }
   .product-details .product-options .giftRecipient-details, .product-details .product-options .customizeable-options {
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0 0;
     clear: both; }
     .product-details .product-options .giftRecipient-details h4, .product-details .product-options .customizeable-options h4 {
-      margin: 0 0;
-      padding: 10px 15px;
+      margin: 10px 0 10px;
+      padding: 5px 15px 5px 40px;
       color: #83cbc3;
       border-bottom: 1px dotted #EEE; }
+    .product-details .product-options .giftRecipient-details .options, .product-details .product-options .customizeable-options .options {
+      margin-bottom: 5px;
+      background: url(../images/options.png) 12px 2px no-repeat;
+      background-size: 20px; }
+    .product-details .product-options .giftRecipient-details .gift, .product-details .product-options .customizeable-options .gift {
+      background: url(../images/gift.png) 12px 0 no-repeat;
+      background-size: 20px; }
     .product-details .product-options .giftRecipient-details label, .product-details .product-options .customizeable-options label {
-      margin: 10px 15px 2px;
+      margin: 0 15px 5px;
       color: #333;
+      font-family: Arial, sans-serif;
       font-size: 0.8em;
       display: block; }
     .product-details .product-options .giftRecipient-details .cd_textbox, .product-details .product-options .giftRecipient-details .cd_textarea,
     .product-details .product-options .giftRecipient-details .gift_textbox, .product-details .product-options .giftRecipient-details .gift_textarea, .product-details .product-options .customizeable-options .cd_textbox, .product-details .product-options .customizeable-options .cd_textarea,
     .product-details .product-options .customizeable-options .gift_textbox, .product-details .product-options .customizeable-options .gift_textarea {
-      margin: 0 15px;
+      margin: 0 15px 5px;
       width: 258px;
       padding: 5px;
       font-size: 0.8em;
@@ -107,7 +113,7 @@ body {
       line-height: 22px;
       clear: both;
       float: left; }
-      .product-details .product-options .giftRecipient-details .left:after, .product-details .product-options .customizeable-options .left:after {
+      .product-details .product-options .giftRecipient-details .left:aftxer, .product-details .product-options .customizeable-options .left:aftxer {
         content: ": "; }
     .product-details .product-options .giftRecipient-details .left + select, .product-details .product-options .customizeable-options .left + select {
       margin: 5px 0 0;
