@@ -22,7 +22,7 @@
 			?>
 
 
-			<div id="product<?php the_ID(); ?>" class="product-details">
+			<div id="product<?php the_ID(); ?>" class="category-view product-details">
 
 				<header class="product-header">
 					<h2>
@@ -39,33 +39,11 @@
 					<?php the_content(); ?>
 				</article>
 
-				<section class="product-options">
-					<?php if(!empty($options_meta)) : ?>
-					<div class="customizeable-options"> 
-						<h4 class="options">Customise</h4>
-						<?php 
-							//split the options by the comma
-							$optionsList = explode(",", $options_meta);
-
-							//loop through the list and execute the shortcodes
-							foreach($optionsList as $options) : 
-
-								//explode to get the attributes
-								$option_explode = explode(":", $options);
-
-								//execute the shortcode
-								echo do_shortcode( "[" . trim($option_explode[0]) . " " . trim($option_explode[1])	 . "]" );
-
-							endforeach;
-						?>
-					</div>
-					<?php endif; ?>
-
-					<div class="giftRecipient-details"> 
-						<h4 class="gift">Gift Recipient</h4> </dt>
-						<?php echo do_shortcode( "[giftRecipient]" ); ?>
-					</div>
-				</section>
+				<footer class="product-footer">
+					<a href="<?php echo get_permalink( get_the_ID() ); ?>">
+						<span>Customise & Buy</span>
+					</a>
+				</footer>
 			</div>
 		</li>
 	<?php endwhile; ?>
