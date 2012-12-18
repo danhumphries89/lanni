@@ -75,7 +75,7 @@ body {
       border-bottom: 1px dotted #EEE; }
     .product-details .product-options .giftRecipient-details .options, .product-details .product-options .customizeable-options .options {
       margin-bottom: 5px;
-      background: url(../images/options.png) 12px 2px no-repeat;
+      background: url(../images/options.png) 13px 2px no-repeat;
       background-size: 20px; }
     .product-details .product-options .giftRecipient-details .gift, .product-details .product-options .customizeable-options .gift {
       background: url(../images/gift.png) 12px 0 no-repeat;

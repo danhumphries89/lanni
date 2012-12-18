@@ -34,7 +34,7 @@
 				<section class="product-options">
 					<?php if(!empty($options_meta)) : ?>
 					<div class="customizeable-options"> 
-						<h4 class="options">Customizable Options</h4>
+						<h4 class="options">Customise</h4>
 						<?php 
 							//split the options by the comma
 							$optionsList = explode(",", $options_meta);
