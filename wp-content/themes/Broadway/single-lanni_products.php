@@ -29,39 +29,34 @@
 				<?php the_content(); ?>
 			</article>
 
-			<section class="product-accordion">
-				<dl class="accordion">
-					<dt class="customer-details"> <h4>Customer Details</h4> </dt>
-					<dd class="details"><?php echo do_shortcode( "[customerDetails]" ); ?></dd>
+			<section class="product-options">
+				<?php if(!empty($options_meta)) : ?>
+				<div class="customizeable-options"> 
+					<h4 class="options">Customise</h4>
+					<?php 
+						//split the options by the comma
+						$optionsList = explode(",", $options_meta);
 
-					<dt class="giftRecipient-details"> <h4>Gift Recipient</h4> </dt>
-					<dd class="details" style="display: none;"><?php echo do_shortcode( "[giftRecipient]" ); ?></dd>
+						//loop through the list and execute the shortcodes
+						foreach($optionsList as $options) : 
 
-					<dt class="product-options"> <h4>Customizable Options</h4> </dt>
-					<dd class="details" style="display: none;">
-						<?php 
-							//split the options by the comma
-							$optionsList = explode(",", $options_meta);
+							//explode to get the attributes
+							$option_explode = explode(":", $options);
 
-							//loop through the list and execute the shortcodes
-							foreach($optionsList as $options) : 
+							//execute the shortcode
+							echo do_shortcode( "[" . trim($option_explode[0]) . " " . trim($option_explode[1])	 . "]" );
 
-								//explode to get the attributes
-								$option_explode = explode(":", $options);
+						endforeach;
+					?>
+				</div>
+				<?php endif; ?>
 
-								//execute the shortcode
-								echo do_shortcode( "[" . trim($option_explode[0]) . " " . trim($option_explode[1])	 . "]" );
-
-							endforeach;
-						?>
-					</dd>
-				</dl>
+				<div class="giftRecipient-details"> 
+					<h4 class="gift">Gift Recipient</h4> </dt>
+					<?php echo do_shortcode( "[giftRecipient]" ); ?>
+				</div>
 			</section>
-			<footer class="product-footer">
-
-			</footer>
 		</div>
-
 	<?php endwhile; ?>
 
 <?php get_footer(); ?>

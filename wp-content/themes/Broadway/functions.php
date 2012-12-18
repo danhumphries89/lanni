@@ -66,6 +66,7 @@ function bangleSizeShortcode( $atts ){
 	$output = "<div class='row'>"
 				. "<label for='bangle_size' class='left'>Size</label>"
 				. "<select name='bangle_size' id='bangle_size'>"
+					. "<option value=''>Select Size</option>"
 					. "<option value='S'>Small</option>"
 					. "<option value='M'>Medium</option>"
 					. "<option value='L'>Large</option>"

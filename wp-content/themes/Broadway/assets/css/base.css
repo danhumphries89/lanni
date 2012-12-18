@@ -48,9 +48,7 @@ body {
     background: #FFF; }
     .product-details .price-block span {
       font-size: 2em;
-      font-weight: bold;
-      color: #83cbc3;
-      text-shadow: 0 1px 0 #EEE; }
+      color: #83cbc3; }
   .product-details .product-content p {
     margin: 0;
     padding: 10px 15px;
@@ -67,7 +65,7 @@ body {
       color: #83cbc3;
       border-bottom: 1px dotted #EEE; }
     .product-details .product-options .giftRecipient-details .options, .product-details .product-options .customizeable-options .options {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       background: url(../images/options.png) 13px 3px no-repeat;
       background-size: 20px; }
     .product-details .product-options .giftRecipient-details .gift, .product-details .product-options .customizeable-options .gift {
@@ -79,6 +77,20 @@ body {
       font-family: Arial, sans-serif;
       font-size: 0.8em;
       display: block; }
+    .product-details .product-options .giftRecipient-details select, .product-details .product-options .customizeable-options select {
+      width: 125px;
+      padding: 5px;
+      background: #FFF;
+      border: 1px solid #EEE;
+      border-radius: 0;
+      -webkit-appearance: none;
+      color: #666;
+      font-family: Arial, sans-serif;
+      font-size: 0.8em; }
+      .product-details .product-options .giftRecipient-details select:hover, .product-details .product-options .giftRecipient-details select:focus, .product-details .product-options .customizeable-options select:hover, .product-details .product-options .customizeable-options select:focus {
+        outline: none;
+        background: #faffbd;
+        border: 1px solid #d8f1ef; }
     .product-details .product-options .giftRecipient-details .cd_textbox, .product-details .product-options .giftRecipient-details .cd_textarea,
     .product-details .product-options .giftRecipient-details .gift_textbox, .product-details .product-options .giftRecipient-details .gift_textarea, .product-details .product-options .customizeable-options .cd_textbox, .product-details .product-options .customizeable-options .cd_textarea,
     .product-details .product-options .customizeable-options .gift_textbox, .product-details .product-options .customizeable-options .gift_textarea {
@@ -108,6 +120,3 @@ body {
       float: left; }
       .product-details .product-options .giftRecipient-details .left:aftxer, .product-details .product-options .customizeable-options .left:aftxer {
         content: ": "; }
-    .product-details .product-options .giftRecipient-details .left + select, .product-details .product-options .customizeable-options .left + select {
-      margin: 5px 0 0;
-      outline: none; }
