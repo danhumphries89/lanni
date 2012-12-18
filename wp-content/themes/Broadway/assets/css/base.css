@@ -13,14 +13,6 @@ body {
   font-family: Aller;
   overflow: hidden; }
 
-/** Sliding Styles for Products pages **/
-.slider {
-  margin: 0;
-  padding: 0; }
-  .slider li {
-    width: 100%;
-    height: 100%; }
-
 .product-details {
   width: 300px;
   height: 620px;
@@ -29,6 +21,7 @@ body {
   padding: 15px 0;
   background: #FFF;
   position: relative;
+  z-index: 800;
   border: 8px solid #d8f1ef;
   background: #FFF; }
   .product-details h1, .product-details h2, .product-details h3, .product-details h4, .product-details h5 {
@@ -75,7 +68,7 @@ body {
       border-bottom: 1px dotted #EEE; }
     .product-details .product-options .giftRecipient-details .options, .product-details .product-options .customizeable-options .options {
       margin-bottom: 5px;
-      background: url(../images/options.png) 13px 2px no-repeat;
+      background: url(../images/options.png) 13px 3px no-repeat;
       background-size: 20px; }
     .product-details .product-options .giftRecipient-details .gift, .product-details .product-options .customizeable-options .gift {
       background: url(../images/gift.png) 12px 0 no-repeat;
@@ -118,18 +111,3 @@ body {
     .product-details .product-options .giftRecipient-details .left + select, .product-details .product-options .customizeable-options .left + select {
       margin: 5px 0 0;
       outline: none; }
-  .product-details .product-footer .addBasket {
-    width: 100%;
-    margin: 10px 0 0;
-    padding: 10px 0 0;
-    bottom: 0px;
-    position: absolute;
-    background: #d8f1ef;
-    text-align: right; }
-    .product-details .product-footer .addBasket a {
-      text-decoration: none; }
-      .product-details .product-footer .addBasket a span {
-        margin: 0 5px 0 0;
-        color: #333;
-        font-weight: 200;
-        text-shadow: 0 1px 1px white; }

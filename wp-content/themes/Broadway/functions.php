@@ -87,8 +87,8 @@ function giftRecipientShortcode( $atts ){
 				. "<input type='text' name='gift_place' id='gift_place' class='gift_textbox' />"
 				. "<label for='gift_gender' class='left'>Gender</label>"
 				. "<select name='gift_gender' id='gift_gender'>"
-					."<option value='Male'>Male</option>"
 					."<option value='Female'>Female</option>"
+					."<option value='Male'>Male</option>"
 				. "</select>";
 	return $output;
 }

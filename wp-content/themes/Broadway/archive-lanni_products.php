@@ -3,7 +3,15 @@
 <div class="flexslider">
 	<ul class="slides">
 	<?php while ( have_posts() ) : the_post(); ?>
-		<li>
+
+		<?php 
+			//get featured image
+			if( has_post_thumbnail() ){
+				$url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+			}else{ $url = ""; }
+		?>
+
+		<li <?php echo ($url != "") ? "style='background-image: url($url);'" : ""; ?>>
 			<?php 
 				//get the categories
 				$categories = get_the_category( get_the_ID() );
