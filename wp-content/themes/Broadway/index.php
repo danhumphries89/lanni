@@ -20,4 +20,10 @@
 
 </div>
 
+<div class="columns left-column">
+	<ul class="widgets">
+		<?php dynamic_sidebar( 'left-sidebar' ); ?>
+	</ul>
+</div>
+
 <?php get_footer(); ?>

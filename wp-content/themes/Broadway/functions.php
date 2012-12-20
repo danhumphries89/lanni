@@ -126,4 +126,13 @@ function colourShortcode( $atts ){
 }
 add_shortcode( 'colourOptions', 'colourShortcode' );
 
+/** Register Homepage Sidebars **/
+register_sidebar(array(
+  'name' => __( 'Homepage Left Sidebar' ),
+  'id' => 'left-sidebar',
+  'description' => __( 'Widgets in this area will be shown in the left hand column on the homepage.' ),
+  'before_title' => '<h3>',
+  'after_title' => '</h3>'
+));
+
 ?>

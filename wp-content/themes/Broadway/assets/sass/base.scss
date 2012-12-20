@@ -9,8 +9,10 @@
 
 body{
 	background: $off-white;
-	font-family: Aller;
-	overflow: hidden;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: 0 0;
+	font-family: Aller, sans-serif;
 }
 
 #main-header{
@@ -39,33 +41,47 @@ body{
 .left-items{
 
 	width: 300px;
-	margin: 0;
+	margin: 0 25px 0 75px;
 	padding: 0;
-	left: 75px;
 	position: relative;
+	float: left;
 	@include box-style;
 
 	.left-page-header{
-		h2{
-			margin: 5px 0 0;
-			padding: 15px 0 10px;
-			font-size: 1.8em;
-			font-weight: normal;
-			text-align: center;
-			color: #333;
-		}
+		h2{ @include all-headings; }
 	}
 
 	.left-page-article{
 		p{
-			margin: 0 0;
-			padding: 10px 10px;
-			line-height: 1.5em;
-			font-size: 0.8em;
-			font-family: Arial, sans-serif;
-			color: #333;
-
+			@include default-paragraphs;
 			&:last-child{ padding-bottom: 20px; }
+		}
+	}
+}
+
+.left-column{ 
+	margin: 0 25px 0 0;
+	.widget{ width: 300px; }
+}
+
+.columns{
+
+	position: relative;
+	float: left;
+
+	.widgets{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		.widget{
+			margin: 0 0 20px;
+			padding: 0 0 15px;
+
+			@include box-style;
+
+			h3{ @include all-headings; }
+			.textwidget { @include default-paragraphs; }
 		}
 	}
 }
