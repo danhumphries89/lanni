@@ -1,13 +1,22 @@
 <?php get_header(); ?>
 
-<div id="container" class="wrapper">
+<div class="left-items">
 
-	<div id="main_content">
+	<?php while ( have_posts() ) : the_post(); ?>
 
-	</div>
-	<div id="left_sidebar">
-		
-	</div>
+		<header class="left-page-header">
+			<h2><?php the_title(); ?></h2>
+		</header>
+
+		<article class="left-page-article">
+			<?php the_content(); ?>
+		</article>
+
+		<footer class="left-page-footer">
+			<span></span>
+		</footer>
+
+	<?php endwhile; ?>
 
 </div>
 

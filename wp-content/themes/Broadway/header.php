@@ -14,3 +14,14 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
 </head>
 <body>
+
+	<div id="main-header">
+
+		<h1 class="title">
+			<a href="#" class="home-link">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_black.png" width="200" height="200" alt="Logo" />
+				<span>Lanni's Birthchart Bangles</span>
+			</a>
+		</h1>
+
+	</div>
