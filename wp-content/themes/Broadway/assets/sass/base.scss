@@ -15,6 +15,9 @@ body{
 	font-family: Aller, sans-serif;
 }
 
+/** ICONS **/
+.popular{ background: url('../images/popular.png') 12px no-repeat; }
+
 #main-header{
 
 	.title{
@@ -34,6 +37,43 @@ body{
 				display: block;
 			}
 			span{ display: none; }
+		}
+	}
+}
+
+#mainmenu{
+	width: 315px;
+	margin: 0 0;
+	left: 75px;
+	position: relative;
+
+	.menu{
+		height: 35px;
+		margin: 5px 0 10px;
+		padding: 0 0;
+		list-style: none;
+
+		li{
+			margin: 0 0;
+			padding: 0 0;
+			float: left;
+
+			a{
+				margin: 0 0;
+				padding: 10px 24px;
+				background: #333; 
+				display: block;
+				color: #FFF;
+				font-size: 0.8em;
+				text-decoration: none;
+				font-weight: normal;
+				border-right: 1px solid #444;
+				border-left: 1px solid #111;
+
+				&:first-child{ border-left: none; }
+				&:last-child{ border-right: none; }
+				&:hover{ background: $dark-green; }
+			}
 		}
 	}
 }
@@ -74,6 +114,31 @@ body{
 		padding: 0;
 		list-style: none;
 
+		.popular-products{
+
+			.content{
+				background-size: 100%;
+				background-position: 0 0;
+
+				h3{
+					font-size: 1em;
+					a{ 
+						font-size: 1.8em;
+						text-decoration: none; 
+						color: #333;
+					}
+					span{
+						display: block;
+						font-size: 1em;
+						color: #666;
+					}
+				}
+
+				.price-block{ @include price-style; }
+				p{ @include default-paragraphs; }
+			}
+		}
+
 		.widget{
 			margin: 0 0 20px;
 			padding: 0 0 15px;
@@ -82,6 +147,7 @@ body{
 
 			h3{ @include all-headings; }
 			.textwidget { @include default-paragraphs; }
+			.widget-title{ @include widget-titles; }
 		}
 	}
 }

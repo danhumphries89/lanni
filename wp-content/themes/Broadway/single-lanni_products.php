@@ -17,7 +17,7 @@
 			<header class="product-header">
 				<h2>
 					<span class="title"><?php the_title(); ?></span>
-					<span class="category"><?php echo $categories[0]->name; ?></span>
+					<span class="category"><?php echo $categories[1]->name; ?></span>
 				</h2>
 
 				<div class="price-block">

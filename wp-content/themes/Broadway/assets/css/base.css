@@ -15,6 +15,10 @@ body {
   background-position: 0 0;
   font-family: Aller, sans-serif; }
 
+/** ICONS **/
+.popular {
+  background: url("../images/popular.png") 12px no-repeat; }
+
 #main-header .title {
   width: 315px;
   margin: 0 0;
@@ -29,6 +33,38 @@ body {
       display: block; }
     #main-header .title a span {
       display: none; }
+
+#mainmenu {
+  width: 315px;
+  margin: 0 0;
+  left: 75px;
+  position: relative; }
+  #mainmenu .menu {
+    height: 35px;
+    margin: 5px 0 10px;
+    padding: 0 0;
+    list-style: none; }
+    #mainmenu .menu li {
+      margin: 0 0;
+      padding: 0 0;
+      float: left; }
+      #mainmenu .menu li a {
+        margin: 0 0;
+        padding: 10px 24px;
+        background: #333;
+        display: block;
+        color: #FFF;
+        font-size: 0.8em;
+        text-decoration: none;
+        font-weight: normal;
+        border-right: 1px solid #444;
+        border-left: 1px solid #111; }
+        #mainmenu .menu li a:first-child {
+          border-left: none; }
+        #mainmenu .menu li a:last-child {
+          border-right: none; }
+        #mainmenu .menu li a:hover {
+          background: #83cbc3; }
 
 .left-items {
   width: 300px;
@@ -67,6 +103,34 @@ body {
     margin: 0;
     padding: 0;
     list-style: none; }
+    .columns .widgets .popular-products .content {
+      background-size: 100%;
+      background-position: 0 0; }
+      .columns .widgets .popular-products .content h3 {
+        font-size: 1em; }
+        .columns .widgets .popular-products .content h3 a {
+          font-size: 1.8em;
+          text-decoration: none;
+          color: #333; }
+        .columns .widgets .popular-products .content h3 span {
+          display: block;
+          font-size: 1em;
+          color: #666; }
+      .columns .widgets .popular-products .content .price-block {
+        margin: 0 0;
+        padding: 10px 0;
+        text-align: center;
+        background: #FFF; }
+        .columns .widgets .popular-products .content .price-block span {
+          font-size: 2em;
+          color: #83cbc3; }
+      .columns .widgets .popular-products .content p {
+        margin: 0 0;
+        padding: 10px 15px;
+        line-height: 1.5em;
+        font-size: 0.8em;
+        font-family: Arial, sans-serif;
+        color: #333; }
     .columns .widgets .widget {
       margin: 0 0 20px;
       padding: 0 0 15px;
@@ -86,6 +150,13 @@ body {
         font-size: 0.8em;
         font-family: Arial, sans-serif;
         color: #333; }
+      .columns .widgets .widget .widget-title {
+        margin: 5px 0 0;
+        padding: 5px 0 5px 35px;
+        font-size: 1em;
+        text-align: left;
+        color: #83cbc3;
+        border-bottom: 1px dotted #d8f1ef; }
 
 .category-view {
   height: 240px; }

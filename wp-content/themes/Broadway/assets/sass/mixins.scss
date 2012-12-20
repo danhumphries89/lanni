@@ -32,3 +32,24 @@
 	font-family: Arial, sans-serif;
 	color: #333;
 }
+
+@mixin price-style{
+    margin: 0 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #FFF;
+
+    span{
+        font-size: 2em;
+        color: $dark-green;
+    }
+}
+
+@mixin widget-titles{
+	margin: 5px 0 0;
+	padding: 5px 0 5px 35px; 
+	font-size: 1em;
+	text-align: left;
+	color: $dark-green;
+	border-bottom: 1px dotted $light-green;
+}

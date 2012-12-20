@@ -25,3 +25,7 @@
 		</h1>
 
 	</div>
+
+	<div id="mainmenu">
+		<?php wp_nav_menu( array('menu' => 'mainmenu' )); ?>
+	</div>
