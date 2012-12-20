@@ -13,9 +13,12 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
 </head>
+<?php
+	$home_class = (is_front_page()) ? "home" : "not-home";
+?>
 <body>
 
-	<div id="main-header">
+	<div id="main-header" class="<?php echo $home_class; ?>">
 
 		<h1 class="title">
 			<a href="#" class="home-link">
@@ -26,6 +29,6 @@
 
 	</div>
 
-	<div id="mainmenu">
+	<div id="mainmenu" class="<?php echo $home_class; ?>">
 		<?php wp_nav_menu( array('menu' => 'mainmenu' )); ?>
 	</div>

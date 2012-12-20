@@ -44,7 +44,7 @@
 				<section class="content" <?php echo ($featured_image_url) ? "style='background-image: url($featured_image_url);'" : ""; ?> >
 					<h3>
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-						<span class="category"><?php echo $categories[1]->name; ?></span>
+						<a href="<?php echo get_category_link( $categories[1]->cat_ID ); ?>" class="category"><?php echo $categories[1]->name; ?></a>
 					</h3>
 
 					<div class="price-block">
