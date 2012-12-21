@@ -94,6 +94,27 @@
 					?>
 				</ul>
 			</div>
+
+			<div class="widget contact-details">
+				<h3 class="contact widget-title">Contact</h3>
+				<p>If you would prefer to fill out an order form; <a href="/orderform.pdf">download</a>, complete & send it to the address below: </p>
+				<p>
+					<span>P.O Box 470</span>
+					<span>Ashford</span>
+					<span>Kent</span>
+					<span>TN23 9PL</span>
+				</p>
+			</div>
+
+			<div class="widget telephone-details">
+				<h3 class="telephone widget-title">Telephone</h3>
+				<p>If you have any questions, or would like to discuss an order; please contact me: </p>
+				<p class="numbers">
+					<span>07952 483705</span>
+					<span>01233 333481</span>
+				</p>
+				<p class="days">(Monday - Friday)</p>
+			</div>
 		</div>
 	</div>
 </div>

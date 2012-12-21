@@ -27,6 +27,14 @@ body {
   background: url("../images/gallery.png") 12px 6px no-repeat;
   background-size: 20px; }
 
+.contact {
+  background: url("../images/contact.png") 12px no-repeat;
+  background-size: 20px; }
+
+.telephone {
+  background: url("../images/telephone.png") 12px no-repeat;
+  background-size: 20px; }
+
 #main-content {
   width: 895px;
   margin: 0 auto;
@@ -237,6 +245,46 @@ body {
           .columns .widgets .design-list .category-list .cat-item:hover a {
             background: #d8f1ef;
             text-shadow: none; }
+    .columns .widgets .contact-details p {
+      margin: 0 0;
+      padding: 10px 15px;
+      line-height: 1.5em;
+      font-size: 0.8em;
+      font-family: Arial, sans-serif;
+      color: #333; }
+      .columns .widgets .contact-details p span {
+        display: block; }
+      .columns .widgets .contact-details p a {
+        padding: 0 2px;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px dotted #EEE; }
+        .columns .widgets .contact-details p a:hover {
+          border-color: #000; }
+    .columns .widgets .telephone-details p {
+      margin: 0 0;
+      padding: 10px 15px;
+      line-height: 1.5em;
+      font-size: 0.8em;
+      font-family: Arial, sans-serif;
+      color: #333; }
+      .columns .widgets .telephone-details p span {
+        margin: 0 0 5px;
+        font-size: 1.5em;
+        text-align: center;
+        display: block; }
+    .columns .widgets .telephone-details .numbers {
+      padding-bottom: 0px; }
+    .columns .widgets .telephone-details .days {
+      margin: 0 0;
+      padding: 10px 15px;
+      line-height: 1.5em;
+      font-size: 0.8em;
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 0 0;
+      text-align: center;
+      font-size: 0.6em; }
 
 .category-view {
   height: 240px; }
