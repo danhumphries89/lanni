@@ -17,18 +17,18 @@
 	$home_class = (is_front_page()) ? "home" : "not-home";
 ?>
 <body>
+	<div class="content">
+		<div id="main-header" class="<?php echo $home_class; ?>">
 
-	<div id="main-header" class="<?php echo $home_class; ?>">
+			<h1 class="title">
+				<a href="#" class="home-link">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_black.png" width="200" height="200" alt="Logo" />
+					<span>Lanni's Birthchart Bangles</span>
+				</a>
+			</h1>
 
-		<h1 class="title">
-			<a href="#" class="home-link">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_black.png" width="200" height="200" alt="Logo" />
-				<span>Lanni's Birthchart Bangles</span>
-			</a>
-		</h1>
+		</div>
 
-	</div>
-
-	<div id="mainmenu" class="<?php echo $home_class; ?>">
-		<?php wp_nav_menu( array('menu' => 'mainmenu' )); ?>
-	</div>
+		<div id="mainmenu" class="<?php echo $home_class; ?>">
+			<?php wp_nav_menu( array('menu' => 'mainmenu' )); ?>
+		</div>
