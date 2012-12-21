@@ -272,7 +272,29 @@ body{
 			}
 		}
 		.testimonial-area{
+			-webkit-transition: all linear 0.2s; 
 
+			#testimonial-slideshow{ height: auto; }
+			.widget-title{ padding-left: 40px; }
+			.slides{
+				li{ height: auto; }
+				p{ @include default-paragraphs; }
+				span{
+					width: 200px;
+					padding: 0 15px 0 0;
+					float: right;
+					display: block;
+					text-align: right;
+					font-size: 0.8em;
+					color: $dark-green;
+
+					&:before{ 
+						margin: 0 5px 0 0;
+						content: " -- "; 
+						letter-spacing: -2px; 
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,11 +1,27 @@
 $(document).ready(function($){
 
 	$(window).load(function(){
-		$('.flexslider').flexslider({
+
+		/** Flexslider for Product Pages **/
+		$('#product-flexslider').flexslider({
 			animation: 'slide',
 			animationSpeed: 650,
 			itemWidth: '100%',
 			slideshow: false
+		});
+
+		/** Flexslider for Homepage Testimonials **/
+		$('#testimonial-slideshow').flexslider({
+			animation: 'fade',
+			animationSpeed: 350,
+			randomize: true,
+			slideshow: true,
+			controlNav: false,
+			directionNav: false,
+			slideshowSpeed: 5000,
+			smoothHeight: true,
+			pauseOnHover: true,
+			controlsContainer: '.testimonial-area'
 		});
 	});
 

@@ -73,7 +73,21 @@
 					</section>
 				</div>
 				<?php endwhile; ?>
-			<?php dynamic_sidebar( 'left-sidebar' ); ?>
+
+				<div class="widget testimonial-area">
+					<h3 class="testimonials widget-title">Testimonials</h3>
+					<div id="testimonial-slideshow" class="flexslider">
+						<ul class="slides">
+							<?php 
+								wp_reset_query();
+								$testimonial_query = new WP_Query( array( 'category_name' => 'testimonials', 'post_type' => 'post' ) );
+								while($testimonial_query->have_posts()) : $testimonial_query->the_post();
+							?>
+							<li> <?php the_content();?> <span><?php the_title(); ?></span> </li>
+							<?php endwhile; ?>
+						</ul>
+					</div>
+				</div>
 		</div>
 	</div>
 

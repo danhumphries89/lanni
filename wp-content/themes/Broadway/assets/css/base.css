@@ -289,6 +289,33 @@ body {
       padding: 0 0 5px;
       text-align: center;
       font-size: 0.6em; }
+    .columns .widgets .testimonial-area {
+      -webkit-transition: all linear 0.2s; }
+      .columns .widgets .testimonial-area #testimonial-slideshow {
+        height: auto; }
+      .columns .widgets .testimonial-area .widget-title {
+        padding-left: 40px; }
+      .columns .widgets .testimonial-area .slides li {
+        height: auto; }
+      .columns .widgets .testimonial-area .slides p {
+        margin: 0 0;
+        padding: 10px 15px;
+        line-height: 1.5em;
+        font-size: 0.8em;
+        font-family: Arial, sans-serif;
+        color: #333; }
+      .columns .widgets .testimonial-area .slides span {
+        width: 200px;
+        padding: 0 15px 0 0;
+        float: right;
+        display: block;
+        text-align: right;
+        font-size: 0.8em;
+        color: #83cbc3; }
+        .columns .widgets .testimonial-area .slides span:before {
+          margin: 0 5px 0 0;
+          content: " -- ";
+          letter-spacing: -2px; }
 
 .category-view {
   height: 240px; }

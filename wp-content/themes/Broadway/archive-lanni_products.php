@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="flexslider">
+<div id="products-flexsider" class="flexslider">
 	<ul class="slides">
 	<?php while ( have_posts() ) : the_post(); ?>
 
