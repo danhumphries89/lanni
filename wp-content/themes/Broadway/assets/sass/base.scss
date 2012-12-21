@@ -57,11 +57,13 @@ body{
 #main-header.not-home{ display: none; }
 
 #mainmenu{
-	width: 895px;
+	width: 879px;
 	margin: 0 auto;
 	left: 0;
 	position: relative;
-	background: #333;
+	background: $dark-green;
+	border-right: 8px solid $light-green;
+	border-left: 8px solid $light-green;
 
 	.menu{
 		height: 35px;
@@ -77,14 +79,14 @@ body{
 			a{
 				margin: 0 0;
 				padding: 10px 24px;
-				background: #333; 
+				background: $dark-green; 
 				display: block;
 				color: #FFF;
 				font-size: 0.8em;
 				text-decoration: none;
 				font-weight: normal;
 
-				&:hover{ background: #666; }
+				&:hover{ background: #333; }
 			}
 		}
 		.shopping-basket{

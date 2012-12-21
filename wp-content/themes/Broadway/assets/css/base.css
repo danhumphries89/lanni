@@ -65,11 +65,13 @@ body {
   display: none; }
 
 #mainmenu {
-  width: 895px;
+  width: 879px;
   margin: 0 auto;
   left: 0;
   position: relative;
-  background: #333; }
+  background: #83cbc3;
+  border-right: 8px solid #d8f1ef;
+  border-left: 8px solid #d8f1ef; }
   #mainmenu .menu {
     height: 35px;
     margin: 5px 0 20px;
@@ -82,14 +84,14 @@ body {
       #mainmenu .menu li a {
         margin: 0 0;
         padding: 10px 24px;
-        background: #333;
+        background: #83cbc3;
         display: block;
         color: #FFF;
         font-size: 0.8em;
         text-decoration: none;
         font-weight: normal; }
         #mainmenu .menu li a:hover {
-          background: #666; }
+          background: #333; }
     #mainmenu .menu .shopping-basket {
       position: absolute;
       right: 0; }
