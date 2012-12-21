@@ -450,14 +450,42 @@ body {
       position: relative;
       z-index: 10; }
 
-#shopping-footer {
+#design_navigation {
   width: 100%;
-  height: 50px;
-  bottom: 0;
-  left: 0;
-  background: #d8f1ef;
+  height: 35px;
+  margin: 0 0;
+  padding: 0 0;
+  bottom: 0px;
+  background: #83cbc3;
   position: fixed;
-  z-index: 999; }
-
-#shopping-footer.home {
-  display: none; }
+  z-index: 0; }
+  #design_navigation .navigation-title {
+    margin: 0 0;
+    padding: 0 20px 0 45px;
+    line-height: 35px;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #FFF;
+    display: inline-block;
+    float: left;
+    background: #333333 url("../images/designs_white.png") 12px no-repeat; }
+  #design_navigation .design-list {
+    margin: 0 0;
+    padding: 0 0;
+    height: 35px;
+    border-left: 8px solid #333;
+    list-style: none;
+    display: inline-block; }
+    #design_navigation .design-list li {
+      margin: 0 0;
+      padding: 0 0;
+      float: left; }
+      #design_navigation .design-list li a {
+        padding: 10px 15px;
+        font-size: 0.8em;
+        color: #FFF;
+        text-decoration: none;
+        display: block;
+        font-weight: 200; }
+        #design_navigation .design-list li a:hover {
+          background: #666; }
