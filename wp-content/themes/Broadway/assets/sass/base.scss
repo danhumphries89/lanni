@@ -104,28 +104,25 @@ body{
 	padding: 0;
 	position: relative;
 	float: left;
-	@include box-style;
 
-	.left-page-header{
-		h2{ @include all-headings; }
-	}
+	.page{
+		@include box-style;	
+		margin: 0 0 20px;
+		.page-header{
+			h2{ @include all-headings; }
+		}
 
-	.left-page-article{
-		p{
-			@include default-paragraphs;
-			&:last-child{ padding-bottom: 20px; }
+		.page-article{
+			p{
+				@include default-paragraphs;
+				&:last-child{ padding-bottom: 20px; }
+			}
 		}
 	}
 }
 
-.left-column{ 
-	margin: 0 25px 0 0;
-	.widget{ width: 300px; }
-}
-.right-column{
-	margin: 0 0 0 0;
-	.widget{ width: 200px; }
-}
+.left-column{ margin: 0 25px 0 0; .widget{ width: 300px; } }
+.right-column{ margin: 0 0 0 0; .widget{ width: 200px; } }
 
 .columns{
 
@@ -176,7 +173,7 @@ body{
 
 		.gallery-list{
 
-			height: 250px;
+			height: 330px;
 
 			.gallery-area{
 				width: 100%;

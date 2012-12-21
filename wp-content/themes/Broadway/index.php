@@ -2,19 +2,20 @@
 
 <div id="main-content">
 	<div class="left-items">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<header class="left-page-header">
+		<?php $page_query = new WP_Query( array('post_type' => 'page')); ?>
+		<?php while ( $page_query->have_posts() ) : $page_query->the_post(); ?>
+		
+		<div class="page items">
+			<header class="page-header">
 				<h2><?php the_title(); ?></h2>
 			</header>
 
-			<article class="left-page-article">
+			<article class="page-article">
 				<?php the_content(); ?>
 			</article>
+		</div>
 
 		<?php endwhile; ?>
-
 	</div>
 
 	<div class="columns left-column">
