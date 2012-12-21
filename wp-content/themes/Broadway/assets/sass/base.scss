@@ -19,11 +19,18 @@ body{
 .popular{ background: url('../images/popular.png') 12px no-repeat; }
 .designs{ background: url('../images/designs.png') 12px no-repeat; background-size: 20px;}
 
+#main-content{
+	width: 895px;
+	margin: 0 auto;
+	display: block; 
+	overflow: hidden;
+}
+
 #main-header{
 	.title{
 
-		width: 315px;
-		margin: 0 0 0 75px;
+		width: 100%;
+		margin: 0 0 0 0;
 		padding: 25px 0 5px;
 		position: relative;
 
@@ -36,20 +43,25 @@ body{
 				display: block;
 			}
 			span{ display: none; }
+
+			&:hover{
+				img{ opacity: 1; }
+			}
 		}
 	}
 }
 #main-header.not-home{ display: none; }
 
 #mainmenu{
-	width: 315px;
-	margin: 0 0;
-	left: 75px;
+	width: 895px;
+	margin: 0 auto;
+	left: 0;
 	position: relative;
+	background: #333;
 
 	.menu{
 		height: 35px;
-		margin: 5px 0 10px;
+		margin: 5px 0 20px;
 		padding: 0 0;
 		list-style: none;
 
@@ -78,7 +90,7 @@ body{
 .left-items{
 
 	width: 300px;
-	margin: 0 20px 0 75px;
+	margin: 0 20px 0 0;
 	padding: 0;
 	position: relative;
 	float: left;
@@ -175,11 +187,9 @@ body{
 						display: block;
 					}
 
-					&:hover{ 
-
-						border-color: $dark-green;
+					&:hover{ border-color: $dark-green;
 						a{
-							background: $light-green; 
+							background: $light-green;
 							text-shadow: none;
 						}
 					}

@@ -23,9 +23,15 @@ body {
   background: url("../images/designs.png") 12px no-repeat;
   background-size: 20px; }
 
+#main-content {
+  width: 895px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden; }
+
 #main-header .title {
-  width: 315px;
-  margin: 0 0 0 75px;
+  width: 100%;
+  margin: 0 0 0 0;
   padding: 25px 0 5px;
   position: relative; }
   #main-header .title a {
@@ -36,18 +42,21 @@ body {
       display: block; }
     #main-header .title a span {
       display: none; }
+    #main-header .title a:hover img {
+      opacity: 1; }
 
 #main-header.not-home {
   display: none; }
 
 #mainmenu {
-  width: 315px;
-  margin: 0 0;
-  left: 75px;
-  position: relative; }
+  width: 895px;
+  margin: 0 auto;
+  left: 0;
+  position: relative;
+  background: #333; }
   #mainmenu .menu {
     height: 35px;
-    margin: 5px 0 10px;
+    margin: 5px 0 20px;
     padding: 0 0;
     list-style: none; }
     #mainmenu .menu li {
@@ -71,7 +80,7 @@ body {
 
 .left-items {
   width: 300px;
-  margin: 0 20px 0 75px;
+  margin: 0 20px 0 0;
   padding: 0;
   position: relative;
   float: left;
