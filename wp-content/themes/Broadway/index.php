@@ -95,7 +95,7 @@
 				</ul>
 			</div>
 
-			<div class="widget contact-details">
+			<div class="widget contact-details" id="contact">
 				<h3 class="contact widget-title">Contact</h3>
 				<p>If you would prefer to fill out an order form; <a href="/orderform.pdf">download</a>, complete & send it to the address below: </p>
 				<p>
