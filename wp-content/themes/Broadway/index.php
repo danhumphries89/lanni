@@ -22,7 +22,19 @@
 			<div class="widget gallery-list">
 				<h3 class="gallery widget-title">Gallery</h3>
 				<ul class="gallery-area">
-
+					<?php $categories = get_categories( array(
+								'type' => 'lanni_products',
+								'orderby' => 'ASC',
+								'child_of' => 5,
+								'hide_empty' => 0,
+							)
+						);
+						foreach($categories as $key => $category) : 
+					?>
+					<li class="<?php echo $category->category_nicename; echo ($key == 0) ? ' visible' : ''; ?>">
+						<span><?php echo $category->cat_name; ?></span>
+					</li>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 
