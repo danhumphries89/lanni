@@ -18,15 +18,21 @@
 	</div>
 
 	<div class="columns left-column">
-
 		<div class="widgets">
+			<div class="widget gallery-list">
+				<h3 class="gallery widget-title">Gallery</h3>
+				<ul class="gallery-area">
+
+				</ul>
+			</div>
+
 			<?php 
 			
 				//query to get the most popular product (random for now)
 				$popular_query = new WP_Query( 
 					array ( 
 						'orderby' => 'rand',
-						'posts_per_page' => '2',
+						'posts_per_page' => '1',
 						'category_name' => 'designs',
 						'post_type' => 'lanni_products'
 					) 

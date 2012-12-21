@@ -9,4 +9,15 @@ $(document).ready(function($){
 		});
 	});
 
+	$('.cat-item a').mouseover(function(elem){
+		
+		var linkName = elem.currentTarget.innerText.toLowerCase()
+		var linkNameFinal = linkName.replace(/ /g, "_");
+		
+		console.log(linkNameFinal);
+
+		
+
+	});
+
 });

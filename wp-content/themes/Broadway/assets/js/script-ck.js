@@ -1,1 +1,1 @@
-$(document).ready(function(e){e(window).load(function(){e(".flexslider").flexslider({animation:"slide",animationSpeed:650,itemWidth:"100%",slideshow:!1})})});
+$(document).ready(function(e){e(window).load(function(){e(".flexslider").flexslider({animation:"slide",animationSpeed:650,itemWidth:"100%",slideshow:!1})});e(".cat-item a").mouseover(function(e){var t=e.currentTarget.innerText.toLowerCase(),n=t.replace(/ /g,"_");console.log(n)})});

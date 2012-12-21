@@ -23,6 +23,10 @@ body {
   background: url("../images/designs.png") 12px no-repeat;
   background-size: 20px; }
 
+.gallery {
+  background: url("../images/gallery.png") 12px 8px no-repeat;
+  background-size: 20px; }
+
 #main-content {
   width: 895px;
   margin: 0 auto;
@@ -74,6 +78,9 @@ body {
         font-weight: normal; }
         #mainmenu .menu li a:hover {
           background: #666; }
+    #mainmenu .menu .shopping-basket {
+      position: absolute;
+      right: 0; }
 
 #mainmenu.not-home {
   display: none; }
@@ -176,6 +183,14 @@ body {
         text-align: left;
         color: #83cbc3;
         border-bottom: 1px dotted #d8f1ef; }
+    .columns .widgets .gallery-list {
+      height: 331px; }
+      .columns .widgets .gallery-list .gallery-area {
+        height: 306px;
+        padding: 0 0;
+        margin: 0 0; }
+      .columns .widgets .gallery-list .widget-title {
+        padding-left: 40px; }
     .columns .widgets .design-list .widget-title {
       padding-left: 40px; }
     .columns .widgets .design-list .category-list {

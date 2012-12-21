@@ -17,7 +17,8 @@ body{
 
 /** ICONS **/
 .popular{ background: url('../images/popular.png') 12px no-repeat; }
-.designs{ background: url('../images/designs.png') 12px no-repeat; background-size: 20px;}
+.designs{ background: url('../images/designs.png') 12px no-repeat; background-size: 20px; }
+.gallery{ background: url('../images/gallery.png') 12px 8px no-repeat; background-size: 20px; }
 
 #main-content{
 	width: 895px;
@@ -82,6 +83,10 @@ body{
 
 				&:hover{ background: #666; }
 			}
+		}
+		.shopping-basket{
+			position: absolute;
+			right: 0;
 		}
 	}
 }
@@ -163,6 +168,19 @@ body{
 			.textwidget { @include default-paragraphs; }
 			.widget-title{ @include widget-titles; }
 		}
+
+		.gallery-list{
+
+			height: 331px;
+
+			.gallery-area{
+				height: 306px;
+				padding: 0 0;
+				margin: 0 0;
+			}
+			.widget-title{ padding-left: 40px; }
+		}
+
 		.design-list{
 
 			.widget-title{ padding-left: 40px; }
