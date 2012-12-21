@@ -18,15 +18,14 @@
 
 <div class="columns left-column">
 
-	<ul class="widgets">
-
+	<div class="widgets">
 		<?php 
 		
 			//query to get the most popular product (random for now)
 			$popular_query = new WP_Query( 
 				array ( 
 					'orderby' => 'rand',
-					'posts_per_page' => '1',
+					'posts_per_page' => '2',
 					'category_name' => 'designs',
 					'post_type' => 'lanni_products'
 				) 
@@ -56,7 +55,27 @@
 			</div>
 			<?php endwhile; ?>
 		<?php dynamic_sidebar( 'left-sidebar' ); ?>
-	</ul>
+	</div>
+</div>
+
+<div class="columns right-column">
+	<div class="widgets">
+		<div class="widget design-list">
+			<h3 class="designs widget-title">Designs</h3>
+			<ul class="category-list">
+				<?php wp_list_categories( array(
+							'orderby' => 'ASC',
+							'use_desc_for_title' => 0,
+							'child_of' => 5,
+							'title_li' => '',
+							'show_count' => 0,
+							'hide_empty' => 0
+						)
+					); 
+				?>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>

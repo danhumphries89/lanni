@@ -19,6 +19,10 @@ body {
 .popular {
   background: url("../images/popular.png") 12px no-repeat; }
 
+.designs {
+  background: url("../images/designs.png") 12px no-repeat;
+  background-size: 20px; }
+
 #main-header .title {
   width: 315px;
   margin: 0 0 0 75px;
@@ -95,6 +99,11 @@ body {
   .left-column .widget {
     width: 300px; }
 
+.right-column {
+  margin: 0 0 0 0; }
+  .right-column .widget {
+    width: 200px; }
+
 .columns {
   position: relative;
   float: left; }
@@ -158,6 +167,29 @@ body {
         text-align: left;
         color: #83cbc3;
         border-bottom: 1px dotted #d8f1ef; }
+    .columns .widgets .design-list .widget-title {
+      padding-left: 40px; }
+    .columns .widgets .design-list .category-list {
+      margin: 20px 0 0;
+      padding: 0 0;
+      list-style: none; }
+      .columns .widgets .design-list .category-list .cat-item {
+        margin: 0 15px 5px;
+        padding: 0 0;
+        background: #FFF;
+        border-right: 8px solid #d8f1ef; }
+        .columns .widgets .design-list .category-list .cat-item a {
+          margin: 0 0;
+          padding: 5px 10px;
+          color: #333;
+          font-size: 0.8em;
+          text-decoration: none;
+          display: block; }
+        .columns .widgets .design-list .category-list .cat-item:hover {
+          border-color: #83cbc3; }
+          .columns .widgets .design-list .category-list .cat-item:hover a {
+            background: #d8f1ef;
+            text-shadow: none; }
 
 .category-view {
   height: 240px; }

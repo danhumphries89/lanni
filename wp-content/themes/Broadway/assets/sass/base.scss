@@ -17,6 +17,7 @@ body{
 
 /** ICONS **/
 .popular{ background: url('../images/popular.png') 12px no-repeat; }
+.designs{ background: url('../images/designs.png') 12px no-repeat; background-size: 20px;}
 
 #main-header{
 	.title{
@@ -99,6 +100,10 @@ body{
 	margin: 0 25px 0 0;
 	.widget{ width: 300px; }
 }
+.right-column{
+	margin: 0 0 0 0;
+	.widget{ width: 200px; }
+}
 
 .columns{
 
@@ -145,6 +150,41 @@ body{
 			h3{ @include all-headings; }
 			.textwidget { @include default-paragraphs; }
 			.widget-title{ @include widget-titles; }
+		}
+		.design-list{
+
+			.widget-title{ padding-left: 40px; }
+
+			.category-list{
+				margin: 20px 0 0;
+				padding: 0 0;
+				list-style: none;
+
+				.cat-item{
+					margin: 0 15px 5px;
+					padding: 0 0;
+					background: #FFF;
+					border-right: 8px solid $light-green;
+
+					a{
+						margin: 0 0;
+						padding: 5px 10px;
+						color: #333;
+						font-size: 0.8em;
+						text-decoration: none;
+						display: block;
+					}
+
+					&:hover{ 
+
+						border-color: $dark-green;
+						a{
+							background: $light-green; 
+							text-shadow: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }
