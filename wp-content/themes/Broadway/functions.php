@@ -25,7 +25,7 @@ function create_product_posts() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'rewrite' => array('slug' => 'products'),
+		'hierarchical' => true,
 		'supports' => array(
 				'title',
 				'editor',

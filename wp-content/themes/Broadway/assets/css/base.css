@@ -13,7 +13,14 @@ body {
   font-family: Aller, sans-serif;
   background-attachment: fixed;
   background-size: 100%;
-  background-position: 0 0; }
+  background-position: 0 0;
+  overflow: auto; }
+
+.not-home {
+  overflow: hidden; }
+
+.home #design_navigation {
+  display: none; }
 
 /** ICONS **/
 .popular {
@@ -329,8 +336,7 @@ body {
 
 .product-details {
   width: 300px;
-  top: 20px;
-  left: 75px;
+  margin: 75px 0 0 75px;
   padding: 15px 0;
   background: #FFF;
   position: relative;
@@ -455,20 +461,29 @@ body {
   height: 35px;
   margin: 0 0;
   padding: 0 0;
-  bottom: 0px;
+  top: 0px;
   background: #83cbc3;
   position: fixed;
-  z-index: 0; }
+  z-index: 800; }
   #design_navigation .navigation-title {
     margin: 0 0;
-    padding: 0 20px 0 45px;
+    padding: 0 5px 0 45px;
     line-height: 35px;
     font-weight: normal;
     font-size: 0.8em;
     color: #FFF;
     display: inline-block;
     float: left;
-    background: #333333 url("../images/designs_white.png") 12px no-repeat; }
+    background: #333333 url("../images/designs_white.png") 12px no-repeat;
+    border-left: 1px solid #444; }
+  #design_navigation .home-icon {
+    padding: 0 15px 0 40px;
+    background: #333333 url("../images/home.png") 12px 8px no-repeat;
+    background-size: 18px;
+    border-right: 1px solid #111;
+    border-left: none; }
+    #design_navigation .home-icon:hover {
+      background-color: #666; }
   #design_navigation .design-list {
     margin: 0 0;
     padding: 0 0;
@@ -486,6 +501,40 @@ body {
         color: #FFF;
         text-decoration: none;
         display: block;
+        font-family: Arial, sans-serif;
         font-weight: 200; }
         #design_navigation .design-list li a:hover {
           background: #666; }
+    #design_navigation .design-list .current-cat {
+      background: #666; }
+
+.boxes {
+  width: 300px;
+  margin: 75px 0 0 75px;
+  border: 8px solid #d8f1ef;
+  background: #FFF; }
+  .boxes header h2 {
+    margin: 5px 0 0;
+    padding: 15px 0 10px;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: center;
+    color: #333; }
+    .boxes header h2 a {
+      color: #333;
+      text-decoration: none; }
+  .boxes p {
+    margin: 0 0;
+    padding: 10px 15px;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    font-family: Arial, sans-serif;
+    color: #333; }
+  .boxes .price-block {
+    margin: 0 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #FFF; }
+    .boxes .price-block span {
+      font-size: 2em;
+      color: #83cbc3; }

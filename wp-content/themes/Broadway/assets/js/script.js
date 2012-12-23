@@ -23,6 +23,15 @@ $(document).ready(function($){
 			pauseOnHover: true,
 			controlsContainer: '.testimonial-area'
 		});
+
+		/** Flexslider for Product Category Pages **/
+		$('#product-categories-section').flexslider({
+			animation: 'slide',
+			animationSpeed: 650,
+			itemWidth: '100%',
+			slideshow: true,
+			useCSS: false
+		});
 	});
 
 	$('.cat-item a').mouseover(function(elem){

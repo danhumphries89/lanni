@@ -13,7 +13,10 @@ body{
 	background-attachment: fixed;
 	background-size: 100%;
 	background-position: 0 0;
+	overflow: auto;
 }
+.not-home{ overflow: hidden; }
+.home{ #design_navigation{ display: none; } }
 
 /** ICONS **/
 .popular{ background: url('../images/popular.png') 12px no-repeat; }
@@ -304,8 +307,7 @@ body{
 .product-details{
     
     width: 300px;
-    top: 20px;
-    left: 75px;
+    margin: 75px 0 0 75px;
     padding: 15px 0;
     background: #FFF;
     position: relative;
@@ -467,14 +469,14 @@ body{
 	height: 35px;
 	margin: 0 0;
 	padding: 0 0;
-	bottom: 0px;
+	top: 0px;
 	background: $dark-green;
 	position: fixed;
-	z-index: 0;
+	z-index: 800;
 
 	.navigation-title{
 		margin: 0 0;
-		padding: 0 20px 0 45px;
+		padding: 0 5px 0 45px;
 		line-height: 35px;
 		font-weight: normal;
 		font-size: 0.8em;
@@ -482,7 +484,15 @@ body{
 		display: inline-block;
 		float: left;
 		background: #333 url('../images/designs_white.png') 12px no-repeat;
-	}	
+		border-left: 1px solid #444;
+	}
+	.home-icon{ 
+		padding: 0 15px 0 40px;
+		background: #333 url('../images/home.png') 12px 8px no-repeat; background-size: 18px;
+		border-right: 1px solid #111;
+		border-left: none; 
+		&:hover{ background-color: #666; }
+	}
 	.design-list{
 
 		margin: 0 0;
@@ -503,10 +513,27 @@ body{
 				color: #FFF;
 				text-decoration: none;
 				display: block;
+				font-family: Arial, sans-serif;
 				font-weight: 200;
 
 				&:hover{ background: #666; }
 			}
 		}
+		.current-cat{ background: #666; }
 	}
+}
+
+.boxes{
+	width: 300px;
+	margin: 75px 0 0 75px;
+	@include box-style;
+
+	header{
+		h2{ 
+			@include all-headings; 
+			a{ color: #333; text-decoration: none; }
+		}
+	}
+	p{ @include default-paragraphs; }
+	.price-block{ @include price-style; }
 }
