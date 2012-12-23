@@ -13,8 +13,12 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
 </head>
-<?php $home_class = (is_front_page()) ? "home" : "not-home"; ?>
-<body class="<?php echo $home_class; ?>">
+<?php 
+	global $post;
+	$current_home = (is_front_page()) ? "home" : ""; 
+	$post_type = get_post( $post )->post_type;
+?>
+<body <?php echo (isset($post_type)) ? "class='$post_type $current_home'" : ''; ?>>
 
 	<div id="design_navigation">
 		<a href="http://localhost:8888/lanni" title="Go to the Homepage">
@@ -36,7 +40,7 @@
 	</div>
 
 	<div class="content">
-		<div id="main-header" class="<?php echo $home_class; ?>">
+		<div id="main-header">
 
 			<h1 class="title">
 				<a href="#" class="home-link">
@@ -47,6 +51,6 @@
 
 		</div>
 
-		<div id="mainmenu" class="<?php echo $home_class; ?>">
+		<div id="mainmenu">
 			<?php wp_nav_menu( array('menu' => 'mainmenu' )); ?>
 		</div>
