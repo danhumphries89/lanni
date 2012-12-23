@@ -3,6 +3,7 @@
 	<div id="product-categories-section" class="section flexslider">
 		<ul class="slides">
 		<?php
+
 			$category_query = new WP_Query( array( 
 				'post_type' => 'lanni_products',
 				'cat' => get_query_var("cat")

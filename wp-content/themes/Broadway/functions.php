@@ -24,6 +24,7 @@ function create_product_posts() {
 				'singular_name' => __( 'Product' )
 			),
 		'public' => true,
+		'rewrite' => false,
 		'has_archive' => true,
 		'hierarchical' => true,
 		'supports' => array(

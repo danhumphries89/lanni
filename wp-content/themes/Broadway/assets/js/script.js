@@ -2,14 +2,6 @@ $(document).ready(function($){
 
 	$(window).load(function(){
 
-		/** Flexslider for Product Pages **/
-		$('#product-flexslider').flexslider({
-			animation: 'slide',
-			animationSpeed: 650,
-			itemWidth: '100%',
-			slideshow: false
-		});
-
 		/** Flexslider for Homepage Testimonials **/
 		$('#testimonial-slideshow').flexslider({
 			animation: 'fade',
