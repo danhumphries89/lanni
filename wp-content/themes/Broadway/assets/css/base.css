@@ -269,6 +269,11 @@ body {
         border-bottom: 1px dotted #EEE; }
         .columns .widgets .contact-details p a:hover {
           border-color: #000; }
+      .columns .widgets .contact-details p span + a {
+        width: 154px;
+        margin: 2px 0 0;
+        padding: 0 0;
+        display: block; }
     .columns .widgets .telephone-details p {
       margin: 0 0;
       padding: 10px 15px;

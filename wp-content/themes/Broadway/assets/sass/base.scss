@@ -250,6 +250,12 @@ body{
 
 					&:hover{ border-color: #000; }
 				}
+				span + a{ 
+					width: 154px;
+					margin: 2px 0 0;
+					padding: 0 0; 
+					display: block; 
+				}
 			}
 		}
 		.telephone-details{
