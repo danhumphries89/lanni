@@ -6,7 +6,10 @@
 
 			$category_query = new WP_Query( array( 
 				'post_type' => 'lanni_products',
-				'cat' => get_query_var("cat")
+				'cat' => get_query_var("cat"),
+				'meta_key' => 'price',
+				'order_by' => 'meta_value_num',
+				'order' => 'ASC'
 			));
 
 			while( $category_query->have_posts() ) : $category_query->the_post();

@@ -555,5 +555,7 @@ body {
 .home.page .left-column {
   display: block; }
 
-.lanni_products #main-header, .lanni_products #mainmenu {
-  display: none; }
+.lanni_products {
+  overflow: hidden; }
+  .lanni_products #main-header, .lanni_products #mainmenu {
+    display: none; }
