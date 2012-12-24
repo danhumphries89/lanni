@@ -549,13 +549,13 @@ body{
 .buttons {
     position: relative;
     float: right;
+    clear: right;
     width: 50px;
     background: #D8F1EF;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 50px;
     left: 58px;
-    top: -42px;
     overflow: hidden;
     cursor: pointer;
 
@@ -577,9 +577,15 @@ body{
 }
 .buttons.basket{ 
 	background: $light-green url('../images/basket.png') 40% 30% no-repeat; 
-	background-size: 25px; 
-	&:hover{ background-position: 85% 40%; }
+	@include button-animation;
 }
+.buttons.later{
+	background: $light-green url('../images/save-later.png') 40% 55% no-repeat;
+	@include button-animation;
+	&:hover{ background-position: 85% 55%; }
+}
+.save-later{ top: -97px; }
+.add-to-basket{ top: -92px; }
 
 /** Display & Hide Specific Elements **/
 .page{

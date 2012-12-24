@@ -53,3 +53,7 @@
 	color: $dark-green;
 	border-bottom: 1px dotted $light-green;
 }
+@mixin button-animation{
+	background-size: 25px; 
+	&:hover{ background-position: 85% 40%; }
+}

@@ -31,7 +31,11 @@
 					</div>
 					<?php the_content(); ?>
 				</section>
-				<div class="buttons basket">
+
+				<div class="buttons later save-later">
+					<span>Save for Later</span>
+				</div>
+				<div class="buttons basket add-to-basket">
 					<span>Add to Basket</span>
 				</div>
 			</div>
