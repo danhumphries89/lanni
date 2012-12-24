@@ -542,6 +542,38 @@ body {
       font-size: 2em;
       color: #83cbc3; }
 
+.buttons {
+  position: relative;
+  float: right;
+  width: 50px;
+  background: #D8F1EF;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 50px;
+  left: 58px;
+  top: -42px;
+  overflow: hidden;
+  cursor: pointer; }
+  .buttons span {
+    padding: 13px 35px 13px 5px;
+    line-height: 12px;
+    color: #333;
+    font-size: 0.8em;
+    text-align: left;
+    visibility: hidden;
+    display: block; }
+  .buttons:hover {
+    width: 100px;
+    left: 108px; }
+    .buttons:hover span {
+      visibility: visible; }
+
+.buttons.basket {
+  background: #d8f1ef url("../images/basket.png") 40% 30% no-repeat;
+  background-size: 25px; }
+  .buttons.basket:hover {
+    background-position: 85% 40%; }
+
 /** Display & Hide Specific Elements **/
 .page #design_navigation {
   display: none; }

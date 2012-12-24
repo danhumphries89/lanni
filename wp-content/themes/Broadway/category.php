@@ -31,6 +31,9 @@
 					</div>
 					<?php the_content(); ?>
 				</section>
+				<div class="buttons basket">
+					<span>Add to Basket</span>
+				</div>
 			</div>
 		</li>
 		<?php endwhile ?>
