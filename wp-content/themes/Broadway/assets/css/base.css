@@ -554,3 +554,6 @@ body {
   width: 300px; }
 .home.page .left-column {
   display: block; }
+
+.lanni_products #main-header, .lanni_products #mainmenu {
+  display: none; }
