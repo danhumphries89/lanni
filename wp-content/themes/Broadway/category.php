@@ -21,7 +21,7 @@
 				<header class="product-header">
 					<h2>
 						<a href="<?php echo the_permalink(); ?>">
-							<span><?php the_title(); ?><span>
+							<span><?php the_title(); ?></span>
 						</a>
 					</h2>
 				</header>
